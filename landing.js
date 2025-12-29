@@ -20,7 +20,10 @@ const translations = {
             step3: "<strong>Merge Up</strong> and clear lines!"
         },
         reviews: {
-            title: "Players Say"
+            title: "Players Say",
+            r1: "\"Surprisingly addictive. I can't put it down!\"",
+            r2: "\"Perfect for quick breaks. Simple yet clever.\"",
+            r3: "\"The design is so clean and calming.\""
         },
         faq: {
             title: "FAQ",
@@ -34,6 +37,16 @@ const translations = {
         cta: {
             title: "Ready to master the grid?",
             subtitle: "Join thousands of players sharpening their minds today."
+        },
+        features: {
+            offline: "Offline Play",
+            haptics: "Haptic Feedback",
+            modes: "Dark & Light Modes",
+            controls: "Swipe or Tap Controls"
+        },
+        footer: {
+            privacy: "Privacy Policy",
+            support: "Support"
         }
     },
     tr: {
@@ -68,6 +81,22 @@ const translations = {
         cta: {
             title: "Izgaraya hükmetmeye hazır mısın?",
             subtitle: "Zihnini keskinleştiren binlerce oyuncuya katıl."
+        },
+        features: {
+            offline: "İnternetsiz Oyna",
+            haptics: "Haptik Geri Bildirim",
+            modes: "Koyu ve Açık Modlar",
+            controls: "Kaydırma veya Dokunma Kontrolleri"
+        },
+        reviews: {
+            title: "Oyuncu Yorumları",
+            r1: "\"Şaşırtıcı derecede bağımlılık yapıcı. Elimden bırakamıyorum!\"",
+            r2: "\"Kısa molalar için mükemmel. Basit ama zekice.\"",
+            r3: "\"Tasarımı çok temiz ve sakinleştirici.\""
+        },
+        footer: {
+            privacy: "Gizlilik Politikası",
+            support: "Destek"
         }
     },
     es: {
@@ -102,6 +131,22 @@ const translations = {
         cta: {
             title: "¿Listo para dominar la cuadrícula?",
             subtitle: "Únete a miles de jugadores que agudizan su mente hoy."
+        },
+        features: {
+            offline: "Juego Offline",
+            haptics: "Respuesta Háptica",
+            modes: "Modos Claro y Oscuro",
+            controls: "Controles de Deslizamiento o Toque"
+        },
+        reviews: {
+            title: "Lo Que Dicen Los Jugadores",
+            r1: "\"Sorprendentemente adictivo. ¡No posso dejar de jugar!\"",
+            r2: "\"Perfecto para descansos rápidos. Simple pero ingenioso.\"",
+            r3: "\"El diseño es muy limpio y relajante.\""
+        },
+        footer: {
+            privacy: "Política de Privacidad",
+            support: "Soporte"
         }
     },
     de: {
@@ -136,6 +181,22 @@ const translations = {
         cta: {
             title: "Bereit, das Raster zu meistern?",
             subtitle: "Schließe dich tausenden Spielern an."
+        },
+        features: {
+            offline: "Offline spielen",
+            haptics: "Haptisches Feedback",
+            modes: "Dunkel- & Hell-Modus",
+            controls: "Wisch- oder Tippsteuerung"
+        },
+        reviews: {
+            title: "Spielerstimmen",
+            r1: "\"Überraschend fesselnd. Ich kann nicht mehr aufhören!\"",
+            r2: "\"Perfekt für kurze Pausen. Einfach, aber clever.\"",
+            r3: "\"Das Design ist so klar und beruhigend.\""
+        },
+        footer: {
+            privacy: "Datenschutz",
+            support: "Support"
         }
     },
     fr: {
@@ -170,6 +231,22 @@ const translations = {
         cta: {
             title: "Prêt à maîtriser la grille ?",
             subtitle: "Rejoignez des milliers de joueurs dès aujourd'hui."
+        },
+        features: {
+            offline: "Jeu Hors Ligne",
+            haptics: "Retour Haptique",
+            modes: "Modes Sombre & Clair",
+            controls: "Controles par Balayage ou Tactile"
+        },
+        reviews: {
+            title: "Avis des Joueurs",
+            r1: "\"Étonnamment addictif. Je ne peux plus m'en passer !\"",
+            r2: "\"Parfait pour les petites pauses. Simple mais astucieux.\"",
+            r3: "\"Le design est très épuré et apaisant.\""
+        },
+        footer: {
+            privacy: "Politique de Confidentialité",
+            support: "Support"
         }
     },
     it: {
@@ -204,6 +281,22 @@ const translations = {
         cta: {
             title: "Pronto a dominare la griglia?",
             subtitle: "Unisciti a migliaia di giocatori oggi stesso."
+        },
+        features: {
+            offline: "Gioco Offline",
+            haptics: "Feedback Tattile",
+            modes: "Modalità Chiaro e Scuro",
+            controls: "Controlli a Scorrimento o Tocco"
+        },
+        reviews: {
+            title: "Dicono i Giocatori",
+            r1: "\"Sorprendentemente coinvolgente. Non riesco a smettere!\"",
+            r2: "\"Perfetto per pause veloci. Semplice ma geniale.\"",
+            r3: "\"Il design è così pulito e rilassante.\""
+        },
+        footer: {
+            privacy: "Informativa sulla Privacy",
+            support: "Supporto"
         }
     },
     ru: {
@@ -238,6 +331,22 @@ const translations = {
         cta: {
             title: "Готовы покорить сетку?",
             subtitle: "Присоединяйтесь к тысячам игроков сегодня."
+        },
+        features: {
+            offline: "Оффлайн игра",
+            haptics: "Тактильная отдача",
+            modes: "Темная и светлая темы",
+            controls: "Свайпы или касания"
+        },
+        reviews: {
+            title: "Отзывы игроков",
+            r1: "\"Удивительно затягивает. Не могу оторваться!\"",
+            r2: "\"Идеально для коротких перерывов. Просто и умно.\"",
+            r3: "\"Дизайн очень чистый и успокаивающий.\""
+        },
+        footer: {
+            privacy: "Политика конфиденциальности",
+            support: "Поддержка"
         }
     },
     ja: {
@@ -272,6 +381,22 @@ const translations = {
         cta: {
             title: "グリッドを制覇する準備は？",
             subtitle: "何千人ものプレイヤーと一緒に脳を鍛えましょう。"
+        },
+        features: {
+            offline: "オフライン再生",
+            haptics: "触覚フィードバック",
+            modes: "ダーク＆ライトモード",
+            controls: "スワイプまたはタップ操作"
+        },
+        reviews: {
+            title: "プレイヤーの声",
+            r1: "「驚くほど中毒性があります。やめられません！」",
+            r2: "「ちょっとした休憩に最適。シンプルだけど賢い。」",
+            r3: "「デザインがとてもクリーンで落ち着きます。」"
+        },
+        footer: {
+            privacy: "プライバシーポリシー",
+            support: "サポート"
         }
     },
     ko: {
@@ -306,6 +431,22 @@ const translations = {
         cta: {
             title: "그리드를 정복할 준비가 되셨나요?",
             subtitle: "지금 바로 두뇌 훈련을 시작하세요."
+        },
+        features: {
+            offline: "오프라인 플레이",
+            haptics: "햅틱 피드백",
+            modes: "다크 & 라이트 모드",
+            controls: "스와이프 또는 탭 컨트롤"
+        },
+        reviews: {
+            title: "플레이어 리뷰",
+            r1: "\"놀라울 정도로 중독성이 있어요. 멈출 수가 없네요!\"",
+            r2: "\"잠깐의 휴식에 완벽해요. 단순하면서도 영리합니다.\"",
+            r3: "\"디자인이 깔끔하고 차분해지는 느낌이에요.\""
+        },
+        footer: {
+            privacy: "개인정보 처리방침",
+            support: "지원"
         }
     },
     zh: {
@@ -340,6 +481,22 @@ const translations = {
         cta: {
             title: "准备好掌握网格了吗？",
             subtitle: "立即加入成千上万的玩家，磨练你的大脑。"
+        },
+        features: {
+            offline: "离线游玩",
+            haptics: "触觉反馈",
+            modes: "深色与浅色模式",
+            controls: "滑动或点击控制"
+        },
+        reviews: {
+            title: "玩家评价",
+            r1: "“出人意料地让人上瘾，我简直停不下来！”",
+            r2: "“非常适合忙里偷闲。简单却巧妙。”",
+            r3: "“设计非常清爽、解压。”"
+        },
+        footer: {
+            privacy: "隐私政策",
+            support: "支持"
         }
     }
 };
@@ -354,7 +511,10 @@ function renderContent(lang) {
         benefits: { ...translations.en.benefits, ...t.benefits },
         how: { ...translations.en.how, ...t.how },
         faq: { ...translations.en.faq, ...t.faq },
-        cta: { ...translations.en.cta, ...t.cta }
+        cta: { ...translations.en.cta, ...t.cta },
+        features: { ...translations.en.features, ...t.features },
+        reviews: { ...translations.en.reviews, ...t.reviews },
+        footer: { ...translations.en.footer, ...t.footer }
     };
 
     // Update Hero
@@ -376,6 +536,18 @@ function renderContent(lang) {
     setHTML('step2', safeT.how.step2);
     setHTML('step3', safeT.how.step3);
 
+    // Update Features
+    setText('feat-offline', safeT.features.offline);
+    setText('feat-haptics', safeT.features.haptics);
+    setText('feat-modes', safeT.features.modes);
+    setText('feat-controls', safeT.features.controls);
+
+    // Update Reviews
+    setText('reviews-title', safeT.reviews.title);
+    setText('review1', safeT.reviews.r1);
+    setText('review2', safeT.reviews.r2);
+    setText('review3', safeT.reviews.r3);
+
     // Update FAQ
     setText('faq-title', safeT.faq.title);
     setText('faq1-q', safeT.faq.q1);
@@ -388,6 +560,10 @@ function renderContent(lang) {
     // Update CTA
     setText('cta-title', safeT.cta.title);
     setText('cta-subtitle', safeT.cta.subtitle);
+
+    // Update Footer
+    setText('link-privacy', safeT.footer.privacy);
+    setText('link-support', safeT.footer.support);
 }
 
 function setText(id, text) {
