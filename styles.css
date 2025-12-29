@@ -1,0 +1,516 @@
+:root {
+    /* Muted Bauhaus Colors */
+    --primary-cool: #2C3E50;
+    --primary-warm: #A0522D;
+    --accent-mustard: #D4A017;
+    --accent-teal: #5F9EA0;
+    --accent-sage: #8FBC8F;
+    --accent-terracotta: #CD853F;
+
+    /* Dark Mode (Default) */
+    --bg-dark: #2A2D34;
+    --bg-dark-elevated: #363940;
+    --text-dark-primary: #F5F0E6;
+    --text-dark-secondary: rgba(245, 240, 230, 0.7);
+
+    /* UI Logic */
+    --bg-main: var(--bg-dark);
+    --bg-card: var(--bg-dark-elevated);
+    --text-primary: var(--text-dark-primary);
+    --text-secondary: var(--text-dark-secondary);
+
+    /* Spacing & Radius */
+    --radius-large: 24px;
+    --radius-card: 16px;
+    --radius-button: 12px;
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.2);
+    --shadow-depth: 0 4px 0 rgba(0, 0, 0, 0.3);
+
+    --transition-hover: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.app-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-spacing {
+    padding: 80px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.section-spacing:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--accent-mustard);
+    letter-spacing: -0.5px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.app-logo {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 32px;
+    border-radius: 32px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.float-anim {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* --- Typography (Matches docs/privacy.css) --- */
+.hero h1 {
+    font-size: 56px;
+    /* Kept larger for Hero specifically as it's a landing page */
+    font-weight: 900;
+    margin-bottom: 16px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-sage) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+    font-size: 28px;
+    /* Privacy h1 size */
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--accent-mustard);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent-teal);
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--accent-sage);
+    margin-bottom: 12px;
+}
+
+p {
+    color: var(--text-dark-secondary);
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+/* --- Store Buttons --- */
+.cta-group {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.store-button {
+    display: flex;
+    align-items: center;
+    background-color: var(--text-primary);
+    /* White/Cream */
+    color: #000;
+    padding: 8px 16px;
+    /* Tighter padding for standard size */
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: 160px;
+}
+
+.store-button.disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+    background-color: var(--bg-card);
+    color: var(--text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.store-button:hover:not(.disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.store-icon {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.store-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+.store-text .small {
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+.store-text .large {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.large-cta {
+    /* removed padding override and scale to make it normal size */
+    /* original was: padding: 12px 24px; transform: scale(1.1); */
+    margin-top: 20px;
+}
+
+/* --- Showcase --- */
+.showcase {
+    padding-bottom: 40px;
+}
+
+.screenshot-track {
+    display: flex;
+    gap: 20px;
+    /* justify-content: center; REMOVED to prevent left-clipping on overflow */
+    justify-content: flex-start;
+    /* Items start from left, allows proper scrolling */
+    overflow-x: auto;
+    padding: 20px 40px;
+    /* More horizontal padding */
+    width: 100%;
+    /* Hide scrollbar */
+    scrollbar-width: none;
+}
+
+.screenshot-track::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Center the track content only if it fits on screen, otherwise let it scroll from left */
+/* REMOVED: Media query caused clipping because .app-container max-width (1000px) < content width (~1020px) */
+/* so even on large screens, centering clipped the left side. Forced flex-start is safer. */
+
+
+.iphone-bezel {
+    position: relative;
+    width: 240px;
+    height: 480px;
+    background: #000;
+    border-radius: 20px;
+    /* Reduced radius for cleaner look without notch */
+    box-shadow: inset 0 0 0 4px #333, 0 20px 40px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+    border: 8px solid #1a1a1a;
+    /* Thicker border to simulate bezel */
+}
+
+.bezel-screen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.bezel-screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* --- Benefits --- */
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.benefit-card {
+    background-color: var(--bg-dark-elevated);
+    border-radius: var(--radius-card);
+    /* 16px */
+    padding: 32px 28px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: var(--transition-hover);
+    /* border: none; removed previous border */
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    /* keep shadow consistent or enhance slightly */
+}
+
+.benefit-card .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    /* Matches privacy h3 */
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--accent-sage);
+    margin-bottom: 12px;
+}
+
+.benefit-card p {
+    color: var(--text-dark-secondary);
+}
+
+/* --- How It Works --- */
+.steps-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.step {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+.step-number {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: var(--accent-teal);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: 900;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.step p {
+    font-size: 18px;
+    color: var(--text-primary);
+}
+
+/* --- Reviews --- */
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.review-card {
+    background-color: var(--bg-dark-elevated);
+    border-radius: var(--radius-card);
+    padding: 32px 28px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid var(--accent-terracotta);
+}
+
+.review-text {
+    font-style: italic;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.stars {
+    color: var(--accent-mustard);
+    letter-spacing: 2px;
+}
+
+/* --- FAQ --- */
+.faq-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+details {
+    background: var(--bg-card);
+    margin-bottom: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+summary {
+    padding: 18px 24px;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+    /* Hide default triangle */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-primary);
+}
+
+summary::after {
+    content: '+';
+    font-size: 20px;
+    color: var(--accent-teal);
+    transition: 0.3s;
+}
+
+details[open] summary::after {
+    transform: rotate(45deg);
+}
+
+details p {
+    padding: 0 24px 24px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 40px;
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+/* --- Animations --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* --- Mobile Resp --- */
+@media (max-width: 768px) {
+    .iphone-bezel {
+        width: 220px;
+        height: 440px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .step {
+        margin-bottom: 30px;
+    }
+
+    .steps-container {
+        gap: 10px;
+    }
+}
+
+/* Lang Nav matches docs/privacy.css */
+.lang-nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background: transparent;
+}
+
+.lang-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.lang-btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: var(--radius-button);
+    background-color: var(--bg-card);
+    /* bg-dark-elevated */
+    color: var(--text-secondary);
+    cursor: pointer;
+    position: relative;
+    transition: all var(--transition-fast);
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.4);
+    /* --shadow-depth matched */
+    transform: translateY(0);
+}
+
+.lang-btn:hover {
+    background-color: var(--primary-cool);
+    color: var(--text-primary);
+}
+
+.lang-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
+}
+
+.lang-btn.active {
+    background-color: var(--accent-mustard);
+    color: var(--bg-dark);
+    box-shadow: 0 4px 0 #9e7810;
+}

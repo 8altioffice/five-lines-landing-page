@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Lines - Relaxing Merge Number Puzzle</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Master the grid in Five Lines, the relaxing yet challenging block puzzle game. Drop, merge numbers, and clear lines. Download now on iOS & Android!">
+    <meta name="keywords"
+        content="block puzzle, number merge, brain training, logic game, relaxing game, puzzle strategy, offline game">
+    <meta name="author" content="8alti Office">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Five Lines - Relaxing Merge Number Puzzle">
+    <meta property="og:description"
+        content="Drop blocks. Merge numbers. Clear lines. A refined logic puzzle combining deep strategy with elegant design.">
+    <meta property="og:image" content="assets/logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Language Switcher -->
+        <nav class="lang-nav">
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="tr">TR</button>
+                <button class="lang-btn" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="de">DE</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="it">IT</button>
+                <button class="lang-btn" data-lang="ru">RU</button>
+                <button class="lang-btn" data-lang="ja">JA</button>
+                <button class="lang-btn" data-lang="ko">KO</button>
+                <button class="lang-btn" data-lang="zh">ZH</button>
+            </div>
+        </nav>
+
+        <!-- 1. Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <img src="logo.png" alt="Five Lines Logo" class="app-logo float-anim">
+                <h1 id="hero-title">Logic Made Beautiful.</h1>
+                <p id="hero-subtitle" class="subtitle">Drop blocks, merge numbers, and find your flow in this relaxing
+                    puzzle challenge.</p>
+
+                <div class="cta-group">
+                    <a href="https://apps.apple.com/app/id6757111490" target="_blank" class="store-button apple">
+                        <span class="store-icon"></span>
+                        <div class="store-text">
+                            <span class="small">Download on the</span>
+                            <span class="large">App Store</span>
+                        </div>
+                    </a>
+                    <!-- Google Play Placeholder -->
+                    <a href="#" class="store-button google disabled">
+                        <span class="store-icon">▶</span>
+                        <div class="store-text">
+                            <span class="small">Coming to</span>
+                            <span class="large">Google Play</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- 2. Gameplay Preview -->
+        <section class="showcase section-spacing">
+            <div class="screenshot-track">
+                <!-- Screenshot 1 -->
+                <div class="iphone-bezel">
+                    <!-- <div class="bezel-notch"></div> -->
+                    <div class="bezel-screen">
+                        <img src="screenshot_1.png" alt="Gameplay Screenshot 1">
+                    </div>
+                </div>
+                <!-- Screenshot 2 -->
+                <div class="iphone-bezel">
+                    <div class="bezel-screen">
+                        <img src="screenshot_2.png" alt="Gameplay Screenshot 2">
+                    </div>
+                </div>
+                <!-- Screenshot 3 -->
+                <div class="iphone-bezel">
+                    <div class="bezel-screen">
+                        <img src="screenshot_3.png" alt="Gameplay Screenshot 3">
+                    </div>
+                </div>
+                <!-- Screenshot 4 -->
+                <div class="iphone-bezel">
+                    <div class="bezel-screen">
+                        <img src="screenshot_4.png" alt="Gameplay Screenshot 4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Why You'll Love It (Benefits) -->
+        <section class="benefits section-spacing">
+            <h2 class="section-title" id="benefits-title">Why You'll Love It</h2>
+            <div class="benefit-grid">
+                <div class="benefit-card">
+                    <div class="icon">🧘</div>
+                    <h3 id="benefit1-title">Relaxing & Satisfying</h3>
+                    <p id="benefit1-desc">No timers, no stress. Just you, the grid, and the satisfying click of blocks
+                        merging.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">🧠</div>
+                    <h3 id="benefit2-title">Smart Brain Training</h3>
+                    <p id="benefit2-desc">Sharpen your logic and spatial planning skills with every move you make.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="icon">✨</div>
+                    <h3 id="benefit3-title">Premium Experience</h3>
+                    <p id="benefit3-desc">Enjoy the "Soft Bauhaus" aesthetic, haptic feedback, and smooth 60fps
+                        animations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. How It Works -->
+        <section class="how-it-works section-spacing">
+            <h2 class="section-title" id="how-title">How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <p id="step1"><strong>Drop Blocks</strong> into the grid.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <p id="step2"><strong>Match 5</strong> same numbers.</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <p id="step3"><strong>Merge Up</strong> and clear lines!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Key Features (Technical) -->
+        <section class="features section-spacing alternative-bg">
+            <div class="feature-list">
+                <div class="feature-item">
+                    <span class="check">✓</span> <span id="feat-offline">Offline Play</span>
+                </div>
+                <div class="feature-item">
+                    <span class="check">✓</span> <span id="feat-haptics">Haptic Feedback</span>
+                </div>
+                <div class="feature-item">
+                    <span class="check">✓</span> <span id="feat-modes">Dark & Light Modes</span>
+                </div>
+                <div class="feature-item">
+                    <span class="check">✓</span> <span id="feat-controls">Swipe or Tap Controls</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Social Proof -->
+        <section class="reviews section-spacing">
+            <h2 class="section-title" id="reviews-title">Players Say</h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <p class="review-text">"Surprisingly addictive. I can't put it down!"</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Perfect for quick breaks. Simple yet clever."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"The design is so clean and calming."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. FAQ -->
+        <section class="faq section-spacing">
+            <h2 class="section-title" id="faq-title">FAQ</h2>
+            <div class="faq-container">
+                <details>
+                    <summary id="faq1-q">Is it free to play?</summary>
+                    <p id="faq1-a">Yes! Five Lines is free to download and play. We respect your time with non-intrusive
+                        ads.</p>
+                </details>
+                <details>
+                    <summary id="faq2-q">Can I play offline?</summary>
+                    <p id="faq2-a">Absolutely. No internet connection is required to enjoy the full game.</p>
+                </details>
+                <details>
+                    <summary id="faq3-q">Is it difficult?</summary>
+                    <p id="faq3-a">It's easy to learn but hard to master! The difficulty adapts as you improve.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- 8. Final CTA -->
+        <section class="final-cta section-spacing">
+            <h2 id="cta-title">Ready to master the grid?</h2>
+            <p id="cta-subtitle">Join thousands of players sharpening their minds today.</p>
+            <a href="https://apps.apple.com/app/id6757111490" class="store-button apple large-cta">
+                <span class="store-icon"></span>
+                <div class="store-text">
+                    <span class="small">Download on the</span>
+                    <span class="large">App Store</span>
+                </div>
+            </a>
+        </section>
+
+        <!-- 9. Footer -->
+        <footer>
+            <div class="footer-links">
+                <a href="privacy.html" id="link-privacy">Privacy Policy</a>
+                <span class="separator">•</span>
+                <a href="mailto:destek8altioffice@gmail.com" id="link-support">Support</a>
+                <span class="separator">•</span>
+                <span class="copyright">&copy; 2025 Five Lines</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="landing.js"></script>
+</body>
+
+</html>
